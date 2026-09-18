@@ -451,7 +451,7 @@ class HistoryOTAdapter {
 
 export const trackChangesAnnotation = Annotation.define()
 
-const chooseOrigin = (transaction: Transaction) => {
+export const chooseOrigin = (transaction: Transaction) => {
   if (transaction.annotation(Transaction.remote)) {
     return 'remote'
   }

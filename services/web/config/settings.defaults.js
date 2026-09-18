@@ -1063,7 +1063,12 @@ module.exports = {
       ),
     ],
     contactUsModal: [],
-    sourceEditorExtensions: [],
+    sourceEditorExtensions: [
+      Path.resolve(
+        __dirname,
+        '../modules/wakatime/frontend/js/editor/wakatime-source-editor-extension.ts'
+      ),
+    ],
     sourceEditorVisualExtensions: [],
     sourceEditorComponents: [],
     pdfLogEntryHeaderActionComponents: [],
@@ -1097,6 +1102,10 @@ module.exports = {
       Path.resolve(
         __dirname,
         '../modules/github-sync/frontend/js/components/github-sync-widget.tsx'
+      ),
+      Path.resolve(
+        __dirname,
+        '../modules/wakatime/frontend/js/components/wakatime-widget.tsx'
       ),
     ],
     referenceLinkingWidgets: [
@@ -1186,6 +1195,10 @@ module.exports = {
         __dirname,
         '../modules/zotero/frontend/js/components/zotero-integration-card.tsx'
       ),
+      Path.resolve(
+        __dirname,
+        '../modules/wakatime/frontend/js/components/wakatime-integration-card.tsx'
+      ),
     ],
     referenceSearchSetting: [],
     settingsModalEditorTabSections: [],
@@ -1221,6 +1234,7 @@ module.exports = {
     'git-bridge',
     'github-sync',
     'zotero',
+    'wakatime',
   ],
   viewIncludes: {},
 
